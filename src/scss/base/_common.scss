@@ -1,0 +1,8 @@
+@use '../abstracts/functions' as *;
+
+.container {
+  margin: 0 auto;
+  padding: 0 responsive(15, 40);
+  width: 100%;
+  max-width: toRem(1440);
+}

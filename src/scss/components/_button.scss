@@ -1,0 +1,23 @@
+@use '../abstracts/functions' as function;
+
+.button {
+  display: flex;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: function.toRem(2) solid #0f62fe;
+    outline-offset: function.toRem(2);
+  }
+
+  &:disabled {
+  }
+
+  &--primary {
+  }
+
+  &--secondary {
+  }
+}

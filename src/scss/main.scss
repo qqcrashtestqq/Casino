@@ -1,0 +1,14 @@
+// VENDORS
+@use 'vendors';
+
+// BASE
+@use 'base';
+
+// LAYOUT
+@use 'layouts';
+
+// COMPONENTS
+@use 'components';
+@use './components/app/header.scss';
+@use './components/content.scss';
+@use './components/app/footer.scss';

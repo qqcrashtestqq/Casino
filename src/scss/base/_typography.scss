@@ -1,0 +1,19 @@
+@use '../abstracts/functions' as *;
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: responsive(32, 48);
+  color: var(--color-white);
+
+  &--h2 {
+    font-size: responsive(24, 32);
+  }
+}
+
+.text {
+  font-weight: 400;
+  font-size: responsive(14, 16);
+  line-height: 1.4;
+  color: var(--color-white);
+}

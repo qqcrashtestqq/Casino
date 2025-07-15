@@ -1,0 +1,47 @@
+@use '../../abstracts/functions' as *;
+@use '../../abstracts/mixins' as *;
+
+.footer {
+  padding: responsive(40, 100) 0 responsive(20, 40);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(16);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(12);
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: toRem(14);
+    transition: var(--transition);
+
+    img {
+      width: fit-content;
+      height: toRem(20);
+    }
+
+    &:hover {
+      color: var(--color-aqua);
+    }
+  }
+}
+
+@include mq('lg') {
+  .footer {
+    &__container {
+      flex-direction: column;
+      gap: toRem(40);
+    }
+  }
+}

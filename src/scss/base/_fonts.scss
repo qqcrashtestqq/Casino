@@ -1,0 +1,8 @@
+@use '../abstracts/mixins' as mixin;
+
+// @include mixin.font-face(NAME, PATH, WEIGHT, STYLE);
+
+@include mixin.font-face('Poppins', 'Poppins-Bold', 700);
+@include mixin.font-face('Poppins', 'Poppins-SemiBold', 600);
+@include mixin.font-face('Poppins', 'Poppins-Medium', 500);
+@include mixin.font-face('Poppins', 'Poppins-Regular', 400);
